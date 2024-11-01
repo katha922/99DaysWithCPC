@@ -13,6 +13,8 @@
         <li>getElementById</li>
         <li>getElementByClassName</li>
     </ul>
+    <h1 id="innerhtml"></h1>
+    <h1 id="sumAdd"></h1>
 
     <script>
         console.log("hello")
@@ -27,6 +29,14 @@
         for(const li of liCollection){
             console.log(li.innerText);
         }
+        //getElementById and innerHtml
+        document.getElementById('innerhtml').innerHTML="Inner HTML"
+        //get sum by getElementById
+        var a=20,b=20;
+        var add;
+        a=a+b;
+        add="sum:"+a;
+        document.getElementById('sumAdd').innerHTML=add;
 
     </script>
 </body>
