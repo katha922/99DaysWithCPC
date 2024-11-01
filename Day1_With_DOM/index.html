@@ -6,6 +6,28 @@
     <title>DOM</title>
 </head>
 <body>
-    
+    <h1>Document Object Model</h1>
+    <h1>We can get elements by some way.There are:</h1>
+    <ul>
+        <li>getElementByTagName</li>
+        <li>getElementById</li>
+        <li>getElementByClassName</li>
+    </ul>
+
+    <script>
+        console.log("hello")
+        //to get li collection by tagname
+        const liCollection=document.getElementsByTagName('li');
+        console.log(liCollection);
+        //using for of loop
+        for(const li of liCollection){
+            console.log(li);
+        }
+        //to get the innertext
+        for(const li of liCollection){
+            console.log(li.innerText);
+        }
+
+    </script>
 </body>
 </html>
