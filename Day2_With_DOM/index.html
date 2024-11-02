@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li class="product">computer</li>
+        <li class="product">mouse</li>
+        <li class="product">keyboard</li>
+    </ul>
+
+    <script>
+        //querySelectorAll
+        const productList = document.querySelectorAll('.product');
+        console.log(productList);
+        for(const li of productList){
+            console.log(li.innerText);
+        }
+
+    </script>
+</body>
+</html>
