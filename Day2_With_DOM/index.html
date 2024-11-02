@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <ul>
+    <ul id="product-list">
         <li class="product">computer</li>
         <li class="product">mouse</li>
         <li class="product">keyboard</li>
@@ -19,6 +19,13 @@
         for(const li of productList){
             console.log(li.innerText);
         }
+        //where to add new element
+        const NewProductList = document.getElementById('product-list');
+        //which element we add
+        const li= document.createElement('li');
+        li.innerText='monitor';
+        //add the child using appendChild
+        NewProductList.appendChild(li);
 
     </script>
 </body>
