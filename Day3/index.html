@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="input-text">default input text</p>
+    <input id="input-field" type="text">
+    <button id="update-btn">Update</button>
+
+    <script>
+        document.getElementById('update-btn').addEventListener('click',function(){
+            const inputField = document.getElementById('input-field');
+            const inputText = inputField.value;
+            const p = document.getElementById('input-text');
+            p.innerText=inputText;
+            inputField.value='';
+
+        })
+
+    </script>
+</body>
+</html>
