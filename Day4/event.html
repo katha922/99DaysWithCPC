@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="console.log('1x click')">Click</button>
+    <button ondblclick="console.log('2x click')">Click2</button>
+    <br>
+    <br>
+    <button id="btn">Event</button>
+    <input type="text" name="" id="text-fild">
+    <h1 id="secret">Secret information</h1>
+    <input type="text" name="" id="delete-confirm" placeholder="Enter delete">
+    <button id="btn-delete" disabled>Delete</button>
+
+    <script>
+        document.getElementById('text-fild').addEventListener('keyup',function(event){
+            console.log(event.target.value);
+        })
+        document.getElementById('delete-confirm').addEventListener('keyup',function(event){
+            const text = event.target.value;
+            const deleteButton = document.getElementById('btn-delete');
+            if(text==='delete'){
+                deleteButton.removeAttribute('disabled');
+            }
+            else{
+                deleteButton.setAttribute('disabled',true);
+            }
+        })
+        document.getElementById('btn-delete').addEventListener('click',function(){
+            const secret = document.getElementById('secret');
+            secret.style.display="none"
+        })
+
+    </script>
+</body>
+</html>
