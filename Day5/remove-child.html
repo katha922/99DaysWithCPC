@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="list-container">
+       <li class="item">Lorem ipsum dolor sit 1.</li>
+       <li class="item">Lorem ipsum dolor sit 2.</li>
+       <li class="item">Lorem ipsum dolor sit 3.</li>
+       <li class="item">Lorem ipsum dolor sit 4.</li>
+       <li class="item">Lorem ipsum dolor sit 5.</li>
+    </ul>
+    <button id="btn">Add</button>
+
+    <script>
+        //to remove
+        const items = document.getElementsByClassName('item');
+        for(const item of items){
+            item.addEventListener('click',function(event){
+                event.target.parentNode.removeChild(event.target)
+            })
+        }
+        //to remove(update)
+        document.getElementById('list-container').addEventListener('click',function(event){
+            event.target.parentNode.removeChild(event.target)
+        })
+
+        //to add(hare we can not remove this new item because in remove section we use child so to solve this problem we need to use parant container)
+        document.getElementById('btn').addEventListener('click',function(){
+            const listContainer = document.getElementById('list-container');
+            const li = document.createElement('li');
+            li.innerText='new item';
+            listContainer.appendChild(li);
+        })
+
+    </script>
+</body>
+</html>
