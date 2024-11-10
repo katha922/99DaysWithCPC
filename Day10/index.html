@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+
+    <header>
+        <section class="banner-section">
+            <div
+            class="hero min-h-screen "
+            style="background-image: url(images/Rectangle9.png);">
+            <div class="hero-overlay bg-opacity-0"></div>
+            <div class="hero-content text-neutral-content text-center">
+              <div class="max-w-md">
+                <h1 class="mb-5 text-5xl font-bold text-pink-500">Bloom with Us</h1>
+                <p class="mb-5 text-gray-500">
+                    Brighten any occasion with our fresh, handpicked blooms. From elegant bouquets to seasonal arrangements, we craft each piece to reflect your heartfelt sentiments.
+                </p>
+                <button class="btn btn-primary bg-pink-500 mt-6 border-none">Shop Now</button>
+              </div>
+            </div>
+          </div>
+        </section>
+    </header>
+    <!-- <main>
+        <section class="product-section">
+            <h1 class="text-5xl mt-10 text-center font-semibold mb-20">Our Product</h1>
+            <div class="flex">
+                <div class="product-card-1 mb-10 grid-cols-3 flex-1 gap-5 md:w-9/12">
+                    <div class="bg-base-100 w-96 shadow-xl">
+                        <figure class="px-10 pt-10">
+                            <img src="images/Flower01.png" alt="" class="rounded-xl">
+                        </figure>
+                        <div class="items-center text-center mb-5 mt-5">
+                            <h2 class="text-xl font-medium">Flower-1</h2>
+                            <h4>200 TK</h4>
+                        </div>
+                    </div>
+    
+                    <div class="bg-base-100 w-96 shadow-xl">
+                        <figure class="px-10 pt-10">
+                            <img src="images/flower04.png" alt="" class="rounded-xl">
+                        </figure>
+                        <div class="items-center text-center mb-5 mt-5">
+                            <h2 class="text-xl font-medium">Flower-1</h2>
+                            <h4>200 TK</h4>
+                        </div>
+                    </div>
+    
+                    <div class="bg-base-100 w-96 shadow-xl">
+                        <figure class="px-10 pt-10">
+                            <img src="images/Flower01.png" alt="" class="rounded-xl">
+                        </figure>
+                        <div class="items-center text-center mb-5 mt-5">
+                            <h2 class="text-xl font-medium">Flower-1</h2>
+                            <h4>200 TK</h4>
+                        </div>
+                    </div>
+                </div>
+
+    
+                <div class="product-card-2 mb-10 grid-cols-3 flex-1 gap-5 md:w-9/12">
+                    <div class="bg-base-100 w-96 shadow-xl">
+                        <figure class="px-10 pt-10">
+                            <img src="images/flower04.png" alt="" class="rounded-xl">
+                        </figure>
+                        <div class="items-center text-center mb-5 mt-5">
+                            <h2 class="text-xl font-medium">Flower-1</h2>
+                            <h4>200 TK</h4>
+                        </div>
+                    </div>
+    
+                    <div class="bg-base-100 w-96 shadow-xl">
+                        <figure class="px-10 pt-10">
+                            <img src="images/Flower01.png" alt="" class="rounded-xl">
+                        </figure>
+                        <div class="items-center text-center mb-5 mt-5">
+                            <h2 class="text-xl font-medium">Flower-1</h2>
+                            <h4>200 TK</h4>
+                        </div>
+                    </div>
+    
+                    <div class="bg-base-100 w-96 shadow-xl">
+                        <figure class="px-10 pt-10">
+                            <img src="images/flower04.png" alt="" class="rounded-xl">
+                        </figure>
+                        <div class="items-center text-center mb-5 mt-5">
+                            <h2 class="text-xl font-medium">Flower-1</h2>
+                            <h4>200 TK</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-3/12">
+                        <div class="flex flex-col items-center mt-24 w-full gap-y-6">
+                            <div class="card bg-white shadow-xl p-6 w-full">
+                                <h2>Have coupon?</h2>
+                                <div>
+                                    <input type="text" class="w-2/4 px-2 py-2 border rounded-l-md" id="promoCodeInput" placeholder="Coupon code">
+                                    <button type="button" class="bg-pink-500 text-white py-2 px-2 rounded-r-md" onclick="calculateSummery()">Apply</button>
+                                </div>
+                            </div>
+                            <div class="card bg-white shadow-xl p-6 w-full">
+        
+                                <div class="col-4 text-left relative">
+                                    <div class="selected-items border-b-2 py-2" id="selected-items">
+        
+                                    </div>
+                                    <div class="cart-box font-medium">
+                                        <h6>Total Price: <span class="text-gray-600"><span id="subtotal">00.00</span>TK</span></h6>
+                                        <h6 class="">Discount: <span class="text-gray-600"><span id="discount">00.00</span> TK</span></h6>
+                                        <h5 class=" pb-6">Total:<span class="text-gray-600"> <span id="total">00.00</span>TK</span></h5>
+                                    </div>
+                                    <button class="bg-pink-500 text-white py-2 px-4 rounded shadow-md absolute -bottom-5 left-1/2 transform w-[240px] -translate-x-1/2 translate-y-1/2">
+                                        Make Purchase
+                                    </button>
+        
+                                </div>
+                            </div>
+        
+                        </div>
+                    </div>
+            </div>
+        </section>
+
+    </main> -->
+    <main class="bg-[#f8f8f8]">
+        <div class=" container mx-auto">
+            <div class="flex items-start">
+                <div class="w-full md:w-9/12">
+                    <div class="flex items-center p-6 w-full">
+                        <h2 class="text-6xl font-bold">New Collection</h2>
+                    </div>
+                    <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!-- 1 -->
+                        <div class="card bg-base-100 shadow-xl mx-6 product_item p-4"  data-name="K. Accessories" data-price="39">
+                            <figure class="p-4 rounded-xl">
+                                <img src="images/Flower01.png" alt="Shoes" class=" "/>
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <div class="rating">
+                                    <input type="radio" name="rating-1" class="mask mask-star bg-orange-400"/>
+                                    <input type="radio" name="rating-1" class="mask mask-star bg-orange-400" checked/>
+                                    <input type="radio" name="rating-1" class="mask mask-star bg-orange-400"/>
+                                    <input type="radio" name="rating-1" class="mask mask-star bg-orange-400"/>
+                                    <input type="radio" name="rating-1" class="mask mask-star bg-orange-400"/>
+                                </div>
+                                <h2 class="card-title">Flower-1</h2>
+                                <h6 class="text-xl pb-4 text-gray-400"><span>290.00</span>Tk</h6>
+                            </div>
+                        </div>
+                        <div class="card bg-base-100 shadow-xl mx-6 product_item p-4"  data-name="K. Accessories-2" data-price="25">
+                            <figure class=" p-5 rounded-xl">
+                                <img src="images/flower04.png" alt="Shoes" class=" "/>
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <div class="rating">
+                                    <input type="radio" name="rating-1" class="mask mask-star bg-orange-400"/>
+                                    <input type="radio" name="rating-1" class="mask mask-star bg-orange-400" checked/>
+                                    <input type="radio" name="rating-1" class="mask mask-star bg-orange-400"/>
+                                    <input type="radio" name="rating-1" class="mask mask-star bg-orange-400"/>
+                                    <input type="radio" name="rating-1" class="mask mask-star bg-orange-400"/>
+                                </div>
+                                <h2 class="card-title">Flower-2 </h2>
+                                <h6 class="text-xl pb-4 text-gray-400"><span>325.00</span>Tk</h6>
+                            </div>
+                        </div>
+                        <div class="card bg-base-100 shadow-xl mx-6 product_item p-4"  data-name="K. Accessories-3" data-price="49">
+                            <figure class=" p-5 rounded-xl">
+                                <img src="images/Flower01.png" alt="Shoes" class=" "/>
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <div class="rating">
+                                    <input type="radio" name="rating-1" class="mask mask-star bg-orange-400"/>
+                                    <input type="radio" name="rating-1" class="mask mask-star bg-orange-400" checked/>
+                                    <input type="radio" name="rating-1" class="mask mask-star bg-orange-400"/>
+                                    <input type="radio" name="rating-1" class="mask mask-star bg-orange-400"/>
+                                    <input type="radio" name="rating-1" class="mask mask-star bg-orange-400"/>
+                                </div>
+                                <h2 class="card-title">Flower-3</h2>
+                                <h6 class="text-xl pb-4 text-gray-400"><span>300.00</span>Tk</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ..... -->
+                    <div class="flex items-center p-6 w-full">
+                        <h2 class="text-6xl font-bold">Products</h2>
+                    </div>
+                    <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!-- 1 -->
+                        <div class="card bg-base-100 shadow-xl mx-6 product_item p-4"  data-name="Sports Back Cap" data-price="49">
+                            <figure class=" p-5 rounded-xl">
+                                <img src="images/Flower01.png" alt="Shoes" class=" "/>
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <div class="rating">
+                                    <input type="radio" name="rating-1" class="mask mask-star bg-orange-400"/>
+                                    <input type="radio" name="rating-1" class="mask mask-star bg-orange-400" checked/>
+                                    <input type="radio" name="rating-1" class="mask mask-star bg-orange-400"/>
+                                    <input type="radio" name="rating-1" class="mask mask-star bg-orange-400"/>
+                                    <input type="radio" name="rating-1" class="mask mask-star bg-orange-400"/>
+                                </div>
+                                <h2 class="card-title">Flower-4</h2>
+                                <h6 class="text-xl pb-4 text-gray-400"><span>230.00</span>Tk</h6>
+                            </div>
+                        </div>
+                        <div class="card bg-base-100 shadow-xl mx-6 product_item p-4"  data-name="Full Jersey Set" data-price="69">
+                            <figure class=" p-5 rounded-xl">
+                                <img src="images/flower04.png" alt="Shoes" class=" "/>
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <div class="rating">
+                                    <input type="radio" name="rating-1" class="mask mask-star bg-orange-400"/>
+                                    <input type="radio" name="rating-1" class="mask mask-star bg-orange-400" checked/>
+                                    <input type="radio" name="rating-1" class="mask mask-star bg-orange-400"/>
+                                    <input type="radio" name="rating-1" class="mask mask-star bg-orange-400"/>
+                                    <input type="radio" name="rating-1" class="mask mask-star bg-orange-400"/>
+                                </div>
+                                <h2 class="card-title">Flower-5 </h2>
+                                <h6 class="text-xl pb-4 text-gray-400"><span>350.00</span>Tk</h6>
+                            </div>
+                        </div>
+                        <div class="card bg-base-100 shadow-xl mx-6 product_item p-4"  data-name="Sports cates" data-price="159">
+                            <figure class=" p-5 rounded-xl">
+                                <img src="images/Flower01.png" alt="Shoes" class=" "/>
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <div class="rating">
+                                    <input type="radio" name="rating-1" class="mask mask-star bg-orange-400"/>
+                                    <input type="radio" name="rating-1" class="mask mask-star bg-orange-400" checked/>
+                                    <input type="radio" name="rating-1" class="mask mask-star bg-orange-400"/>
+                                    <input type="radio" name="rating-1" class="mask mask-star bg-orange-400"/>
+                                    <input type="radio" name="rating-1" class="mask mask-star bg-orange-400"/>
+                                </div>
+                                <h2 class="card-title">Flower-6</h2>
+                                <h6 class="text-xl pb-4 text-gray-400"><span>280.00</span>Tk</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-3/12">
+                    <div class="flex flex-col items-center mt-24 w-full gap-y-6">
+                        <div class="card bg-white shadow-xl p-6 w-full">
+                            <h2>Have coupon?</h2>
+                            <div>
+                                <input type="text" class="w-2/4 px-2 py-2 border rounded-l-md" id="promoCodeInput" placeholder="Coupon code">
+                                <button type="button" class="bg-pink-500 text-white py-2 px-2 rounded-r-md" onclick="calculateSummery()">Apply</button>
+                            </div>
+                        </div>
+                        <div class="card bg-white shadow-xl p-6 w-full">
+    
+                            <div class="col-4 text-left relative">
+                                <div class="selected-items border-b-2 py-2" id="selected-items">
+    
+                                </div>
+                                <div class="cart-box font-medium">
+                                    <h6>Total Price: <span class="text-gray-600"><span id="subtotal">00.00</span>TK</span></h6>
+                                    <h6 class="">Discount: <span class="text-gray-600"><span id="discount">00.00</span> TK</span></h6>
+                                    <h5 class=" pb-6">Total:<span class="text-gray-600"> <span id="total">00.00</span>TK</span></h5>
+                                </div>
+                                <button class="bg-pink-500 text-white py-2 px-4 rounded shadow-md absolute -bottom-5 left-1/2 transform w-[240px] -translate-x-1/2 translate-y-1/2">
+                                    Make Purchase
+                                </button>
+    
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    
+   
+        <footer class="footer bg-base-300 text-base-content p-10 mt-20">
+            <nav>
+              <h6 class="footer-title">Services</h6>
+              <a class="link link-hover">Branding</a>
+              <a class="link link-hover">Design</a>
+              <a class="link link-hover">Marketing</a>
+              <a class="link link-hover">Advertisement</a>
+            </nav>
+            <nav>
+              <h6 class="footer-title">Company</h6>
+              <a class="link link-hover">About us</a>
+              <a class="link link-hover">Contact</a>
+              <a class="link link-hover">Jobs</a>
+              <a class="link link-hover">Press kit</a>
+            </nav>
+            <nav>
+              <h6 class="footer-title">Social</h6>
+              <div class="grid grid-flow-col gap-4">
+                <a>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    class="fill-current">
+                    <path
+                      d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
+                  </svg>
+                </a>
+                <a>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    class="fill-current">
+                    <path
+                      d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
+                  </svg>
+                </a>
+                <a>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    class="fill-current">
+                    <path
+                      d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
+                  </svg>
+                </a>
+              </div>
+            </nav>
+          </footer>
+   
+    
+</body>
+</html>
