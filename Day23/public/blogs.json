@@ -1,0 +1,43 @@
+[
+    {
+      "id": 1,
+      "cover": "https://i.ibb.co.com/306hpFZ/1.jpg",
+      "title": "Exploring the Future of AI",
+      "author": "John Doe",
+      "author_img": "https://example.com/images/john.jpg",
+      "posted_date": "2024-11-20",
+      "hashtag": ["#AI", "#FutureTech", "#Innovation"],
+      "reading_time": 5
+    },
+    {
+      "id": 2,
+      "cover": "https://i.ibb.co.com/z4xmprk/2.png",
+      "title": "The Art of Minimalism",
+      "author": "Jane Smith",
+      "author_img": "https://example.com/images/jane.jpg",
+      "posted_date": "2024-11-19",
+      "hashtag": ["#Minimalism", "#Lifestyle", "#Design"],
+      "reading_time": 8
+    },
+    {
+      "id": 3,
+      "cover": "https://example.com/images/cover3.jpg",
+      "title": "Top 10 Travel Destinations for 2024",
+      "author": "Alex Johnson",
+      "author_img": "https://example.com/images/alex.jpg",
+      "posted_date": "2024-11-18",
+      "hashtag": ["#Travel", "#Adventure", "#2024Destinations"],
+      "reading_time": 10
+    },
+    {
+      "id": 4,
+      "cover": "https://example.com/images/cover4.jpg",
+      "title": "Mastering the Art of Cooking",
+      "author": "Emily Davis",
+      "author_img": "https://example.com/images/emily.jpg",
+      "posted_date": "2024-11-17",
+      "hashtag": ["#Cooking", "#Food", "#Recipes"],
+      "reading_time": 7
+    }
+  ]
+  
