@@ -1,8 +1,8 @@
-
+import background from '../../../assets/3.png'
 
 const Hero = () => {
     return (
-        <div>
+        <div className=""  style={{background: `url(${background})` }}>
            <div className="text-center m-20">
             <p className="text-blue-500">Your Vision, Our Code – Let's Build Together.</p>
             <h1 className="text-3xl m-2 font-bold">Next-Level Websites for Next-Level Brands</h1>
