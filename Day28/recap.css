@@ -39,3 +39,11 @@
     /* box-shadow: h-offset v-off-set blur spread color inset; */
     box-shadow: 15px 15px 15px 2px red ;
 }
+.box-4{
+    height: 30px;
+    width: 200px;
+    overflow: auto;
+    border: 2px solid green;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
