@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.box{
+    background-color: blueviolet;
+    /* width: 300px; its not responsive  */
+    /* to create responsive use vw */
+    width: 30vw;
+    /* to take div center use margin-auto . its block element thats why it work. otherwise in inline element it do not work*/
+    margin: auto;
+    font-size: 2em;
+}
+.container{
+    background-color: red;
+    box-sizing: border-box;
+    margin: 20px auto;
+    color: white;
+    font-size: 22px;
+    width: 100vmin;
+    min-height: 40vh;
+}
+.box-1{
+    border: 2px solid red;
+    width: 80px;
+    min-height: 80px;
+    /* in inline there can not work width. so take width use inline-block */
+    display: inline-block; 
+    padding: 20px;
+}
+.box-3{
+    height: 80px;
+    width: 180px;
+    font-size: 30px;
+    border: 2px solid black;
+    padding: 10px;
+    text-align: center;
+    margin: 20px;
+    /* box-shadow: h-offset v-off-set blur spread color inset; */
+    box-shadow: 15px 15px 15px 2px red ;
+}
