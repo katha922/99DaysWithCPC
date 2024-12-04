@@ -18,9 +18,10 @@ function App() {
         </a>
       </div>
       <h1>Vite + React</h1>
-      {veiwbtn?<button>veiw</button>:"false"}
+      {/* {veiwbtn?<button>veiw</button>:"false"} */}
+      {veiwbtn && <button>veiw</button>}
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
+        <button onClick={() =>setveiwbtn(!veiwbtn)}>
           count is {count}
         </button>
         <p>
