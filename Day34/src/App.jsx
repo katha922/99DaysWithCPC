@@ -6,6 +6,33 @@ import './App.css'
 function App() {
   const [count, setCount] = useState(0)
   const [veiwbtn,setveiwbtn]=useState(true)
+  const [lists,setLists]=useState([
+    {
+      id:1,
+      title:"list-1",
+      catagory: "math",
+    },
+    {
+      id:2,
+      title:"list-2",
+      catagory:"physics"
+    },
+    {
+      id:3,
+      title:"list-3",
+      catagory:"biology"
+    },
+  ])
+
+  // const List = ()=>{return(<>
+  // <div className="list">list-1</div></>)}
+
+  const List=({list})=>{
+    return(<>
+    <div className='list'>{list.title}</div>
+    <div className="list">{list.catagory}</div>
+    </>)
+  }
 
   return (
     <>
@@ -18,11 +45,15 @@ function App() {
         </a>
       </div>
       <h1>Vite + React</h1>
-      {/* {veiwbtn?<button>veiw</button>:"false"} */}
-      {veiwbtn && <button>veiw</button>}
+      {veiwbtn?<button>veiw</button>:"false"}
+      {/* {veiwbtn && <button>veiw</button>} */}
+      {lists.map(list=>{
+        return<List list={list}></List>
+      })}
       <div className="card">
         <button onClick={() =>setveiwbtn(!veiwbtn)}>
-          count is {count}
+          Toggle veiwbtn
+          {/* count is {count} */}
         </button>
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
