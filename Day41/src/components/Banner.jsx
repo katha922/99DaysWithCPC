@@ -8,7 +8,7 @@ import { ReactTyped } from "react-typed";
 
 const Banner = () => {
     return (
-        <div>
+        <div name="Home">
            <div className="flex items-center justify-center mt-20 ">
                <div className="">
                    <img src={image} className="h-40 w-40 rounded-full" alt="" />

@@ -2,7 +2,7 @@
 
 const About = () => {
     return (
-        <div>
+        <div name="About">
             <h1 className="font-bold text-2xl text-center mt-20">About Me</h1>
             <p className="text-center mt-4 text-slate-600 mb-10">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br></br> Adipisci doloremque expedita ipsam hic tempore rem<br></br> accusamus quae beatae cum natus!</p>
             <div className="flex justify-center mb-10 gap-8">
