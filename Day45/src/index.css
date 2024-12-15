@@ -1,0 +1,17 @@
+nav{
+  display: flex;
+  gap: 30px;
+  background-color: black;
+  padding: 10px;
+  
+  
+}
+
+li{
+  list-style: none;
+  color: white;
+}
+
+.red{
+  background-color: red;
+}
